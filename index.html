@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Qudratjon | Portfolio</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/2f72e5c5b6.js" crossorigin="anonymous"></script>
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #0f172a; color: #f8fafc; line-height: 1.6; }
-    header { text-align: center; padding: 80px 20px; background: linear-gradient(135deg,#1e293b,#0f172a); }
-    header h1 { font-size: 3rem; color: #38bdf8; }
-    header p { font-size: 1.2rem; color: #cbd5e1; margin-top: 10px; }
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    h2 { font-size: 2rem; color: #38bdf8; margin-bottom: 20px; }
-    .card { background: #1e293b; padding: 25px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.4); }
-    footer { text-align: center; padding: 30px; background: #1e293b; color: #94a3b8; font-size: 0.9rem; }
-    a { color: #38bdf8; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body,html{height:100%;width:100%;overflow-x:hidden;scroll-behavior:smooth;}
+    #bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
+
+    header{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;text-align:center;color:white;}
+    header h1{font-size:3rem;color:#38bdf8;margin-bottom:10px;}
+    header p{font-size:1.2rem;color:#cbd5e1;}
+    .typing{border-right:3px solid #38bdf8;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(40,end) forwards, blink .75s step-end infinite;}
+    @keyframes typing{from{width:0}to{width:100%}}
+    @keyframes blink{50%{border-color:transparent}}
+
+    section{padding:60px 20px;max-width:1000px;margin:auto;position:relative;z-index:1;}
+    h2{font-size:2rem;color:#38bdf8;margin-bottom:20px;text-align:center;}
+    .card{background:rgba(30,41,59,0.9);padding:25px;border-radius:16px;margin-bottom:25px;box-shadow:0 8px 16px rgba(0,0,0,0.3);transition:0.3s;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 12px 20px rgba(0,0,0,0.4);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+
+    footer{text-align:center;padding:30px;background:rgba(30,41,59,0.9);color:#94a3b8;font-size:.9rem;position:relative;z-index:1;}
+    a{color:#38bdf8;text-decoration:none;transition:0.2s;}
+    a:hover{color:#7dd3fc;}
   </style>
 </head>
 <body>
+  <!-- 3D background -->
+  <div id="bg"></div>
+
   <!-- HEADER -->
   <header>
     <h1>Qudratjon Tolipjonov</h1>
-    <p>15 y.o | DevOps • Cybersecurity • Full Stack Developer</p>
+    <p class="typing">DevOps • Cybersecurity • Full Stack Developer</p>
   </header>
 
   <!-- ABOUT -->
@@ -32,29 +49,27 @@
     <h2>About Me</h2>
     <div class="card">
       <p>
-        I’m Qudratjon, a passionate young developer focused on <b>DevOps</b>, 
-        <b>Cybersecurity</b> and <b>Full Stack Development</b>.  
-        At the age of 15, I already dedicate my free time to exploring modern 
-        technologies, building secure systems, and learning how to make the web 
-        safer. I believe in continuous learning and in the future I aim to 
-        become a professional white-hat hacker and DevOps engineer. 🚀
+        Hi 👋 I’m <b>Qudratjon</b>, a 15-year-old tech enthusiast.  
+        My main focus is on <b>DevOps</b>, <b>Cybersecurity</b> and <b>Full Stack Development</b>.  
+        I spend my time building projects, learning modern tools, and exploring how to make the web safer.  
+        My dream is to become a professional <b>white-hat hacker</b> and help secure the digital world. 🚀
       </p>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section>
-    <h2>Skills</h2>
+    <h2>My Skills</h2>
     <div class="grid">
-      <div class="card"><b>⚙️ DevOps:</b> CI/CD, Docker, Linux, Automation</div>
-      <div class="card"><b>🛡 Cybersecurity:</b> PenTesting, Web Security, Ethical Hacking</div>
-      <div class="card"><b>💻 Full Stack:</b> HTML, CSS, JS, Python, Django</div>
+      <div class="card"><i class="fas fa-cogs"></i> <b>DevOps:</b> CI/CD, Docker, Linux, Automation</div>
+      <div class="card"><i class="fas fa-shield-alt"></i> <b>Cybersecurity:</b> PenTesting, Web Security, Ethical Hacking</div>
+      <div class="card"><i class="fas fa-code"></i> <b>Full Stack:</b> HTML, CSS, JS, Python, Django</div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section>
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <div class="card">
       <p>📧 Email: <a href="mailto:tolipjonovqudratillo0423@gmail.com">tolipjonovqudratillo0423@gmail.com</a></p>
       <p>📞 Phone: +998 91 325 0017</p>
@@ -63,7 +78,27 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 Qudratjon | Built with passion 💙
+    © 2025 Qudratjon | Built with 💙 passion
   </footer>
+
+  <!-- Vanta.js & Three.js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0f172a,
+      shininess: 50.00,
+      waveHeight: 20.00,
+      waveSpeed: 1.20,
+      zoom: 0.85
+    })
+  </script>
 </body>
 </html>
