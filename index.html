@@ -1,104 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Qudratjon | Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/2f72e5c5b6.js" crossorigin="anonymous"></script>
-
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body,html{height:100%;width:100%;overflow-x:hidden;scroll-behavior:smooth;}
-    #bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
-
-    header{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;text-align:center;color:white;}
-    header h1{font-size:3rem;color:#38bdf8;margin-bottom:10px;}
-    header p{font-size:1.2rem;color:#cbd5e1;}
-    .typing{border-right:3px solid #38bdf8;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(40,end) forwards, blink .75s step-end infinite;}
-    @keyframes typing{from{width:0}to{width:100%}}
-    @keyframes blink{50%{border-color:transparent}}
-
-    section{padding:60px 20px;max-width:1000px;margin:auto;position:relative;z-index:1;}
-    h2{font-size:2rem;color:#38bdf8;margin-bottom:20px;text-align:center;}
-    .card{background:rgba(30,41,59,0.9);padding:25px;border-radius:16px;margin-bottom:25px;box-shadow:0 8px 16px rgba(0,0,0,0.3);transition:0.3s;}
-    .card:hover{transform:translateY(-5px);box-shadow:0 12px 20px rgba(0,0,0,0.4);}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
-
-    footer{text-align:center;padding:30px;background:rgba(30,41,59,0.9);color:#94a3b8;font-size:.9rem;position:relative;z-index:1;}
-    a{color:#38bdf8;text-decoration:none;transition:0.2s;}
-    a:hover{color:#7dd3fc;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qudratjon Tolibjonov Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 3D background -->
-  <div id="bg"></div>
-
-  <!-- HEADER -->
   <header>
-    <h1>Qudratjon Tolipjonov</h1>
-    <p class="typing">DevOps • Cybersecurity • Full Stack Developer</p>
+    <h1>Qudratjon Tolibjonov</h1>
+    <p>Yosh Dasturchi | Cybersecurity Enthusiast</p>
   </header>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Hi 👋 I’m <b>Qudratjon</b>, a 15-year-old tech enthusiast.  
-        My main focus is on <b>DevOps</b>, <b>Cybersecurity</b> and <b>Full Stack Development</b>.  
-        I spend my time building projects, learning modern tools, and exploring how to make the web safer.  
-        My dream is to become a professional <b>white-hat hacker</b> and help secure the digital world. 🚀
-      </p>
-    </div>
+  <section class="about">
+    <h2>👨‍💻 Men haqimda</h2>
+    <p>Men yosh dasturchi va kelajakdagi Cybersecurity mutaxassisiman. IT sohasiga juda qiziqaman, ayniqsa:</p>
+    <ul>
+      <li>🛡 Kiberxavfsizlik (White Hat Hacking, Ethical Hacking)</li>
+      <li>🌐 Web Dasturlash (Python Backend – Django, HTML, CSS, JS)</li>
+      <li>💻 Linux tizimlari va server boshqaruvi</li>
+      <li>⚡ IT avtomatlashtirish va yangi texnologiyalarni sinash</li>
+    </ul>
   </section>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>My Skills</h2>
-    <div class="grid">
-      <div class="card"><i class="fas fa-cogs"></i> <b>DevOps:</b> CI/CD, Docker, Linux, Automation</div>
-      <div class="card"><i class="fas fa-shield-alt"></i> <b>Cybersecurity:</b> PenTesting, Web Security, Ethical Hacking</div>
-      <div class="card"><i class="fas fa-code"></i> <b>Full Stack:</b> HTML, CSS, JS, Python, Django</div>
-    </div>
+  <section class="skills">
+    <h2>🛠 Texnologiyalar va skillarim</h2>
+    <ul>
+      <li><strong>Backend:</strong> Python (Django, Flask)</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Database:</strong> MySQL, PostgreSQL</li>
+      <li><strong>OS:</strong> Linux (Ubuntu), Windows</li>
+      <li><strong>Tools:</strong> GitHub, Docker, VirtualBox, Ventoy</li>
+    </ul>
   </section>
 
-  <!-- CONTACT -->
-  <section>
-    <h2>Contact Me</h2>
-    <div class="card">
-      <p>📧 Email: <a href="mailto:tolipjonovqudratillo0423@gmail.com">tolipjonovqudratillo0423@gmail.com</a></p>
-      <p>📞 Phone: +998 91 325 0017</p>
-    </div>
+  <section class="goals">
+    <h2>🎯 Maqsadim</h2>
+    <p>Kuchli Full-Stack Developer va Cybersecurity Specialist bo‘lib, O‘zbekiston IT rivojiga hissa qo‘shish.</p>
   </section>
 
-  <!-- FOOTER -->
+  <section class="interests">
+    <h2>📚 Qiziqishlarim</h2>
+    <ul>
+      <li>Yangi dasturlash tillarini o‘rganish</li>
+      <li>Sun’iy intellekt va xavfsizlik tizimlari</li>
+      <li>Texnologik yangiliklarni kuzatish</li>
+      <li>Kitob o‘qish va sport bilan shug‘ullanish</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>📇 Aloqa</h2>
+    <ul>
+      <li><strong>Yosh:</strong> 14 (2009-yil, 23-aprel)</li>
+      <li><strong>Manzil:</strong> Chimyon, Farg‘ona → Toshkent</li>
+      <li><strong>Telefon:</strong> +998 91 325 0017</li>
+      <li><strong>Email:</strong> tolipjonovqudratillo0423@gmail.com</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/tolipjonovqudratillo0423" target="_blank">tolipjonovqudratillo0423</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/qudratillo-tolibjonov-a943ba381" target="_blank">Qudratillo Tolibjonov</a></li>
+      <li><strong>Telegram:</strong> <a href="https://t.me/qudratillo0017" target="_blank">@qudratillo0017</a></li>
+    </ul>
+  </section>
+
   <footer>
-    © 2025 Qudratjon | Built with 💙 passion
+    <p>© 2025 Qudratjon Tolibjonov</p>
   </footer>
-
-  <!-- Vanta.js & Three.js scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-  <script>
-    VANTA.WAVES({
-      el: "#bg",
-      mouseControls: true,
-      touchControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x0f172a,
-      shininess: 50.00,
-      waveHeight: 20.00,
-      waveSpeed: 1.20,
-      zoom: 0.85
-    })
-  </script>
 </body>
 </html>
+
+<link rel="stylesheet" href="style.css" />
